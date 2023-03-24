@@ -15,7 +15,7 @@ const getData = async (pageCount = 10) => {
     url.searchParams.append('api_key', process.env.API_KEY) 
     let response = await fetch(url.href)
     let json = await response.json() 
-    return json.near_earth_objects.map(data => cleanData(data)) 
+    return json?.near_earth_objects.map(data => cleanData(data)) 
   }) 
   // wait for all the pages to finish fetching rows
   let rows = await Promise.all(pages)  
