@@ -18,8 +18,9 @@ app.get('/schema', async (req,res)=>{
   res.send(schema) 
 })
 
+const port = process.env.PORT || 3001
 // Start listening for requests.
-app.listen(()=>{
+app.listen(port, ()=>{
   console.log("Express is live.")
 })
 
