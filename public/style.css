@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+body{ 
+  text-align: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  background: green;
+  color: white;
+  cursor: pointer;
+  
+}
