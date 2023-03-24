@@ -2,9 +2,9 @@ import fetch from "node-fetch"
 import { cleanData } from './cleanData.js'
   
 
-const getData = async (pageCount = 50) => { 
+const getData = async (pageCount = 10) => { 
 
-  // array of all the pages we want (e.g. the first 20 pages)
+  // array of all the pages we want (e.g. the first 10 pages)
   let pageIndex = Array.from({length: pageCount}).map((v,k)=>k+1)
   console.log(pageIndex) 
   
